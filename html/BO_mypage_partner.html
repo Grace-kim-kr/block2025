@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="before_btn" aria-label="이전으로"><i class="fas fa-chevron-left"></i></button>
+            <h1 class="title">마이페이지</h1>
+        </header>
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+          <div class="mypage_wrap">
+            <div class="myID_area">
+              <div class="myID">
+                <i class="fa-solid fa-user-tie partner"></i>
+                <div class="idinfo-bx">
+                  <p class="id"><span><strong>ID</strong> 님</span></p>
+                  <p><span>Partner</span></p>
+                </div>
+              </div>
+
+              <div class="now_state-bx money">
+                <div class="nowstate">
+                  <span>잔액</span>
+                  <strong>50,000P</strong>
+                </div>
+                <div class="btn-bx">
+                  <a href="">출금하기</a>
+                </div>
+              </div>
+            </div>
+
+            <!----관리 영역----->
+            <div class="myManage_area">
+              <div class="partnerManage-bx">
+                <div class="appList_tab">
+                  <ul class="tab_list">
+                      <li data-tab="tab_pay" class="current">수익관리</li>
+                      <li data-tab="tab_user">사용자관리</li>
+                      <li data-tab="tab_manager">매니저관리</li>
+                  </ul>
+                  <!----수익관리 st---->
+                  <div id="tab_pay" class="appList_tabcont current">
+                    <p class="manageList-title"><strong>사용자현황</strong></p>
+
+                    <div class="manageList-sort">
+                      <div class="dv-grp">
+                        <div class="dv">
+                          <select class="block" name="date-sort01" id="">
+                            <option value="">이름순</option>
+                          </select>
+                        </div>
+                        <div class="dv pl5">
+                          <select class="block" name="date-sort02" id="">
+                            <option value="">가입일자순</option>
+                          </select>
+                        </div>
+                        <div class="dv pl5">
+                          <select class="block" name="date-sort03" id="">
+                            <option value="">매칭순</option>
+                          </select>
+                        </div>
+                        <div class="dv pl5">
+                          <select class="block" name="date-sort04" id="">
+                            <option value="">누적순</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="manageList-bx w100">
+                      <table class="manageList_table" id="pay">
+                        <thead>
+                          <tr>
+                            <th>코드사용자</th>
+                            <th>발생인원</th>
+                            <th>발생일자</th>
+                            <th>발생포인트</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="c"><strong>컬럼1</strong></td>
+                            <td class="r">2</td>
+                            <td class="c">24/09/23</td>
+                            <td class="r">70P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼2</strong></td>
+                            <td class="r">2</td>
+                            <td class="c">25/01/05</td>
+                            <td class="r">70P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼3</strong></td>
+                            <td class="r">2</td>
+                            <td class="c">24/09/23</td>
+                            <td class="r">70P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼4</strong></td>
+                            <td class="r">3</td>
+                            <td class="c">25/10/23</td>
+                            <td class="r">70P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼5</strong></td>
+                            <td class="r">2</td>
+                            <td class="c">24/09/23</td>
+                            <td class="r">70P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼6</strong></td>
+                            <td class="r">5</td>
+                            <td class="c">25/01/23</td>
+                            <td class="r">70P</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div id="load-pay" class="more_btn">
+                      <span class="pr10">더보기</span> <i class="fas fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <!----//수익관리 ed---->
+                  <!----사용자관리 st---->
+                  <div id="tab_user" class="appList_tabcont">
+                    <p class="manageList-title"><strong>적립내역</strong></p>
+
+                    <div class="manageList-sort">
+                      <div class="dv-grp">
+                        <div class="dv pr10 sort01">
+                          <select class="block" name="date-sort05" id="">
+                            <option value="">일자별보기</option>
+                          </select>
+                        </div>
+                        <div class="dv pr10 sort02">최근 7일</div>
+                        <div class="dvn result">24/09/31 - 24/10/06</div>
+                      </div>
+                    </div>
+                    <div class="manageList-bx w100">
+                      <table class="manageList_table" id="user">
+                        <thead>
+                          <tr>
+                            <th>코드사용자</th>
+                            <th>가입일자</th>
+                            <th>누적매칭</th>
+                            <th>누적포인트</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="c"><strong>컬럼1</strong></td>
+                            <td class="c">24/09/23</td>
+                            <td class="r">575명</td>
+                            <td class="r">20,125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼2</strong></td>
+                            <td class="c">24/10/23</td>
+                            <td class="r">1,575명</td>
+                            <td class="r">1,125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼3</strong></td>
+                            <td class="c">24/11/23</td>
+                            <td class="r">2,575명</td>
+                            <td class="r">125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼4</strong></td>
+                            <td class="c">24/12/23</td>
+                            <td class="r">1,575명</td>
+                            <td class="r">12,125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼5</strong></td>
+                            <td class="c">25/01/01</td>
+                            <td class="r">12,575명</td>
+                            <td class="r">12,500P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼6</strong></td>
+                            <td class="c">24/11/23</td>
+                            <td class="r">2,575명</td>
+                            <td class="r">125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼7</strong></td>
+                            <td class="c">24/12/23</td>
+                            <td class="r">1,575명</td>
+                            <td class="r">12,125P</td>
+                          </tr>
+                          <tr>
+                            <td class="c"><strong>컬럼8</strong></td>
+                            <td class="c">25/01/01</td>
+                            <td class="r">12,575명</td>
+                            <td class="r">12,500P</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div id="load-user" class="more_btn">
+                      <span class="pr10">더보기</span> <i class="fas fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <!----//사용자관리 ed---->
+                  <!----매니저관리 st---->
+                  <div id="tab_manager" class="appList_tabcont">
+                    
+                    <p class="comment">* 미적용 시 기본 30P</p>
+                    <div class="manageList-bx">
+                      <table class="manageList_table" id="manager">
+                        <thead>
+                          <tr>
+                            <th class="radio"></th>
+                            <th>매니저</th>
+                            <th>누적<br/>매칭</th>
+                            <th>누적<br/>포인트</th>
+                            <th>출금<br/>가능</th>
+                            <th>적용P</th>
+                            <th>P변경</th>
+                            <th class="input">input</th>
+                            <th class="select">select</th>
+                            <th>확인</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="c"><input type="radio" id="manage01" name="manage"><label for="manage01"></label></td>
+                            <td class="c"><strong>홍길동<br/><span>(4)</span></strong></td>
+                            <td class="r">1,156</td>
+                            <td class="r">28,750</td>
+                            <td class="r">20,000</td>
+                            <td class="r">50P</td>
+                            <td class="r">70</td>
+                            <td class="c"><input type="text" class="input block"></td>
+                            <td class="c">
+                              <select class="block" name="" id="">
+                                <option value="">전체</option>
+                                <option value="">A</option>
+                              </select>
+                            </td>
+                            <td class="c"><a class="btn" href="">확인</a></td>
+                          </tr>
+                          <tr>
+                            <td class="c"><input type="radio" id="manage02" name="manage"><label for="manage02"></label></td>
+                            <td class="c"><strong>김길동<br/><span>(14)</span></strong></td>
+                            <td class="r">1,156</td>
+                            <td class="r">28,750</td>
+                            <td class="r">20,000</td>
+                            <td class="r">50P</td>
+                            <td class="r">-</td>
+                            <td class="c"><input type="text" class="input block"></td>
+                            <td class="c">
+                              <select class="block" name="" id="">
+                                <option value="">전체</option>
+                                <option value="">A</option>
+                              </select>
+                            </td>
+                            <td class="c"><a class="btn" href="">확인</a></td>
+                          </tr>
+                          <tr class="add">
+                            <td class="c"><input type="radio" id="manage02" name="manage"><label for="manage02"></label></td>
+                            <td class="c"><strong>김길동<br/><span>(14)</span></strong></td>
+                            <td class="r">1,156</td>
+                            <td class="r">28,750</td>
+                            <td class="r">20,000</td>
+                            <td class="r">50P</td>
+                            <td class="r">-</td>
+                            <td class="c"><input type="text" class="input block"></td>
+                            <td class="c">
+                              <select class="block" name="" id="">
+                                <option value="">전체</option>
+                                <option value="">A</option>
+                              </select>
+                            </td>
+                            <td class="c"><a class="btn" href="">확인</a></td>
+                          </tr>
+                          <tr class="add">
+                            <td class="c"><input type="radio" id="manage02" name="manage"><label for="manage02"></label></td>
+                            <td class="c"><strong>김길동<br/><span>(14)</span></strong></td>
+                            <td class="r">1,156</td>
+                            <td class="r">28,750</td>
+                            <td class="r">20,000</td>
+                            <td class="r">50P</td>
+                            <td class="r">-</td>
+                            <td class="c"><input type="text" class="input block"></td>
+                            <td class="c">
+                              <select class="block" name="" id="">
+                                <option value="">전체</option>
+                                <option value="">A</option>
+                              </select>
+                            </td>
+                            <td class="c"><a class="btn" href="">확인</a></td>
+                          </tr>
+                          <tr class="add">
+                            <td class="c"><input type="radio" id="manage02" name="manage"><label for="manage02"></label></td>
+                            <td class="c"><strong>김길동<br/><span>(14)</span></strong></td>
+                            <td class="r">1,156</td>
+                            <td class="r">28,750</td>
+                            <td class="r">20,000</td>
+                            <td class="r">50P</td>
+                            <td class="r">-</td>
+                            <td class="c"><input type="text" class="input block"></td>
+                            <td class="c">
+                              <select class="block" name="" id="">
+                                <option value="">전체</option>
+                                <option value="">A</option>
+                              </select>
+                            </td>
+                            <td class="c"><a class="btn" href="">확인</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div id="load-manage" class="more_btn">
+                      <span class="pr10">더보기</span> <i class="fas fa-angle-down"></i>
+                    </div>
+
+                    <!----- li 형식 (미사용)
+                      <div>
+                      <ul class="manage_list">
+                        <li>
+                          <input type="radio" id="mg01" name="mg" class="radio"><label for="mg01"></label>
+                          <div class="info">
+                            <strong>홍길동 <span>(4)</span></strong>
+                            <div class="info-detail">
+                              <p><span>누적매칭</span> <b>1,156</b></p>
+                              <p><span>누적포인트</span> <b>20,000</b></p>
+                              <p><span>출금 가능</span> <b>50P</b></p>
+                              <p><span>적용P</span> <b>50P</b> / <span>P변경</span> <b>70</b></p>
+                              <p><input type="text" class="block"></p>
+                              <p>
+                                <select class="block" name="" id="">
+                                  <option value="">전체</option>
+                                  <option value="">A</option>
+                                </select>
+                              </p>
+                            </div>
+                          </div>
+                          <a class="btn" href="">확인</a>
+                        </li>
+                      </ul>
+                    </div>---->
+                    
+                  </div>
+                  <!----//매니저관리 ed---->
+                </div>
+              </div>
+
+              <!--<div class="mymanageBtn-bx">
+                <ul>
+                  <li><a href="">사용자관리</a></li>
+                  <li><a href="">수익관리</a> </li>
+                </ul>
+              </div>-->
+
+              <div class="myinfo">
+                <strong>내 정보</strong>
+                <a class="editBtn" href="">수정하기 <i class="fa-solid fa-angle-right"></i></a>
+                <div class="myinfo-list">
+                  <dl>
+                    <dt>나의 ID코드</dt>
+                    <dd>
+                      <span>P41777</span>
+                      <button class="pasteBtn">복사</button>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>이름</dt>
+                    <dd>홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>연락처</dt>
+                    <dd>010-1234-5678</dd>
+                  </dl>
+                  <dl>
+                    <dt>계좌번호</dt>
+                    <dd>신한 110-222-333333</dd>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="myfooter">
+                <a href="">비밀번호변경</a>
+                <a href="">로그아웃</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      $(function() {
+        //파트너 마이페이지 탭
+        $('ul.tab_list li').click(function() {
+            var activeTab = $(this).attr('data-tab');
+            $('ul.tab_list li').removeClass('current');
+            $('.appList_tabcont').removeClass('current');
+            $(this).addClass('current');
+            $('#' + activeTab).addClass('current');
+        });
+
+        //더보기 버튼 제어 (수익관리)
+        $('#pay tbody tr').hide();
+        $("#pay tbody tr").slice(0, 3).show(); //처음 보일 갯수 지정, 뒷 숫자로 갯수 변경가능
+        $("#load-pay").click(function(e){
+            e.preventDefault();
+            $("#pay tbody tr:hidden").slice(0, 4).show(); // 클릭시 more 갯수 지저정
+            if($("#pay tbody tr:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+                $('#load-pay').hide(); // 컨텐츠 없을 시 버튼 사라짐
+            }
+        });
+
+        //더보기 버튼 제어 (사용자관리)
+        $('#user tbody tr').hide();
+        $("#user tbody tr").slice(0, 3).show(); //처음 보일 갯수 지정, 뒷 숫자로 갯수 변경가능
+        $("#load-user").click(function(e){
+            e.preventDefault();
+            $("#user tbody tr:hidden").slice(0, 4).show(); // 클릭시 more 갯수 지저정
+            if($("#user tbody tr:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+                $('#load-user').hide(); // 컨텐츠 없을 시 버튼 사라짐
+            }
+        });
+
+        //더보기 버튼 제어 (매니저관리)
+        $('#manager tbody tr').hide();
+        $("#manager tbody tr").slice(0, 3).show(); //처음 보일 갯수 지정, 뒷 숫자로 갯수 변경가능
+        $("#load-manage").click(function(e){
+            e.preventDefault();
+            $("#manager tbody tr:hidden").slice(0, 4).show(); // 클릭시 more 갯수 지저정
+            if($("#manager tbody tr:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+                $('#load-manage').hide(); // 컨텐츠 없을 시 버튼 사라짐
+            }
+        });
+    
+      });
+    </script>
+</body>
+</html>

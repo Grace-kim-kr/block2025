@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="menu_btn" aria-label="메뉴"><i class="fas fa-bars"></i></button>
+            <h1 class="title">출근부기록</h1>
+            <a class="notice_btn" href="" aria-label="알림"><i class="fa-solid fa-bell"></i><span class="count">5</span></a>
+        </header>
+        <!-- 메뉴 st-->
+        <nav id="menu">
+            <div class="menu_dim"></div>
+            <div class="menu_cont">
+                <div class="menu_header">
+                    <a type="button" class="close_btn" aria-label="메뉴닫기"><i class="fas fa-times"></i></a>
+                    <!--- 241024 위치 및 사용자유형 수정 st ---->
+                    <p class="user_name"><i class="fas fa-user"></i>&nbsp;<strong>홍길동</strong> 님,<br/>안녕하세요.</p>
+                    <div class="userType-bx">
+                      <span class="txt_lank usern">N</span>
+                      <span class="txt_lank userb">B</span>
+                      <span class="txt_lank partner">Partner</span>
+                      <span class="txt_lank mix">MIX</span>
+                      <span class="txt_lank basic">basic</span>
+                      <span class="txt_lank primium">Primium</span>
+                    </div>
+                    <!--- //241024 위치 및 사용자유형 수정 ed ---->
+                </div>
+                <!-- menu_list -->
+                <div class="menu_list">
+                    <div class="category">
+                        <ul>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="mypage"><i class="fa-solid fa-user"></i></span><strong>마이페이지</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="usermanage"><i class="fa-solid fa-address-card"></i></span><strong>사용자관리</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="revenue"><i class="fa-solid fa-chart-line"></i></span><strong>수익관리</strong>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="#" class="menu_tit">
+                                <span class="setting"><i class="fa-solid fa-gear"></i></span><strong>설정관리</strong>
+                              </a>
+                          </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="notice"><i class="fa-solid fa-bullhorn"></i></span><strong>공지사항</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--// menu_list ed-->
+                <div class="menu_footer">
+                    <a class="logout-btn" href="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+        <!--// 메뉴 ed-->
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+          <div class="todayBnner-bx">
+            <div class="todayBnner">
+              <i class="fa-regular fa-bell"></i>
+              <span> 금일전국매칭</span>
+              <p>
+                <strong>[N] 149</strong>, <strong>[B] 90</strong>
+              </p>
+            </div>
+          </div>
+
+          <!---- 출근부 st ---->
+          <div class="matchingWrap">
+            <!---날짜 선택 영역 st--->
+            <div class="dateSelect-bx">
+              <strong class="pr10">날짜 선택</strong>
+              <input type="date" id="datepicker" class="datepicker"><label></label>
+              <!-- <button class="selBtn"><i class="fa-solid fa-caret-left"></i></button>
+              <p class="date">2024.11.20.<br/><span class="today">오늘</span></p>
+              <button class="selBtn"><i class="fa-solid fa-caret-right"></i></button> -->
+            </div>
+            <!---//날짜 선택 영역 ed--->
+            <div class="manageBtn-bx">
+              <button class="manageBtn">재고관리</button>
+              <button class="tableBtn">테이블 추가</button>
+            </div>
+
+            <div class="workerList-bx">
+              <ul class="worker-list">
+                <li>
+                  <div class="top">
+                    <div class="top-left">
+                      <strong class="tit">한화증권</strong>
+                      <span class="locat">강남지점 1</span>
+                    </div>
+                    <div class="state">
+                      <span class="stBadge ing">근무중</span>
+                    </div>
+                  </div>
+                  
+                  <div class="info">
+                    <div class="info-top">
+                      <p>
+                        <span class="dt">시작시간 : </span>
+                        <span class="dd">10:20</span>
+                      </p>
+                      <p>
+                        <span class="dt">세팅시간 : </span>
+                        <span class="dd">2시간</span>
+                      </p>
+                    </div>
+                    <div class="info-bottom">
+                      <p>
+                        <span class="dt">착석시간 : </span>
+                        <span class="dd">10:30</span>
+                      </p>
+                      <p>
+                        <span class="dt">종료여부 : </span>
+                        <span class="dd">진행중</span>
+                      </p>
+                    </div>         
+                  </div>
+                </li>
+                <li>
+                  <div class="top">
+                    <div class="top-left">
+                      <strong class="tit">신한은행</strong>
+                    </div>
+                    <div class="state">
+                      <span class="stBadge stby">대기중</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="top">
+                    <div class="top-left">
+                      <strong class="tit">한화증권</strong>
+                      <span class="locat">강남지점 1</span>
+                    </div>
+                    <div class="state">
+                      <span class="stBadge done">종료</span>
+                    </div>
+                  </div>
+
+                  <div class="info">
+                    <div class="info-top">
+                      <p>
+                        <span class="dt">시작시간 : </span>
+                        <span class="dd">10:30</span>
+                      </p>
+                      <p>
+                        <span class="dt">세팅시간 : </span>
+                        <span class="dd">2시간</span>
+                      </p>
+                    </div>
+                    <div class="info-bottom">
+                      <p>
+                        <span class="dt">착석시간 : </span>
+                        <span class="dd">10:30</span>
+                      </p>
+                      <p>
+                        <span class="dt">종료여부 : </span>
+                        <span class="dd">완료</span>
+                      </p>
+                    </div>         
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!---- //출근부 ed ----> 
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <script>
+      //datepicker 오늘날짜 표시
+      document.getElementById('datepicker').value = new Date().toISOString().substring(0, 10);
+    </script>
+</body>
+</html>

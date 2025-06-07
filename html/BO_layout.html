@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="menu_btn" aria-label="메뉴"><i class="fas fa-bars"></i></button>
+            <h1 class="logo"><a href="">BLOCK</a></h1>
+            <a class="notice_btn" href="" aria-label="알림"><span class="count">5</span></a>
+        </header>
+        <!-- 메뉴 st-->
+        <nav id="menu">
+            <div class="menu_dim"></div>
+            <div class="menu_cont">
+                <div class="menu_header">
+                    <a type="button" class="close_btn" aria-label="메뉴닫기"><i class="fas fa-times"></i></a>
+                    <!--- 241024 위치 및 사용자유형 수정 st ---->
+                    <p class="user_name"><i class="fas fa-user"></i>&nbsp;<strong>홍길동</strong> 님,<br/>안녕하세요.</p>
+                    <div class="userType-bx">
+                      <span class="txt_lank usern">N</span>
+                      <span class="txt_lank userb">B</span>
+                      <span class="txt_lank partner">Partner</span>
+                      <span class="txt_lank mix">MIX</span>
+                      <span class="txt_lank basic">basic</span>
+                      <span class="txt_lank primium">Primium</span>
+                    </div>
+                    <!--- //241024 위치 및 사용자유형 수정 ed ---->
+                </div>
+                <!-- menu_list -->
+                <div class="menu_list">
+                    <div class="category">
+                        <ul>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="mypage"><i class="fa-solid fa-user"></i></span><strong>마이페이지</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="usermanage"><i class="fa-solid fa-address-card"></i></span><strong>사용자관리</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="revenue"><i class="fa-solid fa-chart-line"></i></span><strong>수익관리</strong>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="#" class="menu_tit">
+                                <span class="setting"><i class="fa-solid fa-gear"></i></span><strong>설정관리</strong>
+                              </a>
+                          </li>
+                            <li>
+                                <a href="#" class="menu_tit">
+                                  <span class="notice"><i class="fa-solid fa-bullhorn"></i></span><strong>공지사항</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--// menu_list ed-->
+                <div class="menu_footer">
+                    <a class="logout-btn" href="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+        <!--// 메뉴 ed-->
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+    <a href="#none" id="topBtn">top</a>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+    <!--swiper-->
+    <script src="../resources/m/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
+
+    <!---popup st---->
+    <div class="popup onboardingPop" id="onboarding">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img-bx"><img src="https://cdn-icons-png.flaticon.com/512/5455/5455835.png" alt=""></div>
+            <p class="title">블럭에 오신 것을<br/>환영합니다</p>
+            <p class="text">사용자N과 사용자B를 연결하여<br/>유닛의 배정을 효율적으로 관리합니다</p>
+            <div class="onboardbtn-bx">
+              <a class="swiper-button-next">다음</a>
+            </div>
+            <div class="skip-bx">
+              <a class="skip-btn b-close" href="#none">건너뛰기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-bx"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/matching-6625011-5525319.png?f=webp" alt=""></div>
+            <p class="title">간편하게<br/>유닛을 요청하세요</p>
+            <p class="text">빠르고 정확하게<br/>유닛을 배정받습니다</p>
+            <div class="onboardbtn-bx">
+              <a class="swiper-button-next">다음</a>
+            </div>
+            <div class="skip-bx">
+              <a class="skip-btn b-close" href="#none">건너뛰기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-bx"><img src="https://cdn-icons-png.flaticon.com/512/8148/8148456.png" alt=""></div>
+            <p class="title">신뢰성과 투명성을<br/>보장합니다</p>
+            <p class="text">사용자 간의 신뢰성을 높이고<br/>투명한 운영을 지원합니다</p>
+            <div class="onboardbtn-bx">
+              <a class="start-btn b-close" href="#none">시작하기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!---//popup ed---->
+
+    <script>
+        $("#onboarding").bPopup();
+
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+          },
+        });
+    </script>
+</body>
+</html>

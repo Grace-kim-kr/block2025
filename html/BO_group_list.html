@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="before_btn" aria-label="이전으로"><i class="fas fa-chevron-left"></i></button>
+            <h1 class="title">그룹관리</h1>
+        </header>
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+          <!---- 잔액 st ---->
+          <div class="money-bx">
+            <div class="user-state">
+              <div class="state left">
+                <div class="tit">
+                  <span>잔액</span>
+                </div>
+                <strong>50,000P</strong>
+              </div>
+            </div>
+          </div>
+          <!---- //잔액 ed ---->
+          <!---- 그룹관리 st ---->
+          <div class="groupWrap">
+            <div class="group_box">
+              <button class="boxBtn">박스관리</button>
+            </div>
+
+            <div class="group_list">
+              <ul>
+                <li>
+                  <div class="group_name">그룹1</div>
+                  <div class="group_edit">
+                    <button class="editBtn">그룹설정 <i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="group_name">그룹22</div>
+                  <div class="group_edit">
+                    <button class="editBtn">그룹설정 <i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="group_name">그룹333</div>
+                  <div class="group_edit">
+                    <button class="editBtn">그룹설정 <i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="group_name"><input type="text" class="block" value="그룹4444"></div>
+                  <div class="group_edit">
+                    <button class="editBtn">그룹설정 <i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!---- //그룹관리 ed ---->          
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+      // 인원 카운팅
+      function count(type)  {
+        // 결과를 표시할 element
+        const resultElement = document.getElementById('result');
+        
+        // 현재 화면에 표시된 값
+        let number = resultElement.innerText;
+        
+        // 더하기/빼기
+        if(type === 'plus') {
+          number = parseInt(number) + 1;
+        }else if(type === 'minus')  {
+          number = parseInt(number) - 1;
+        }
+        
+        // 결과 출력
+        resultElement.innerText = number;
+      }
+    </script>
+</body>
+</html>

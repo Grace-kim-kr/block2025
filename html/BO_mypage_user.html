@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="before_btn" aria-label="이전으로"><i class="fas fa-chevron-left"></i></button>
+            <h1 class="title">마이페이지</h1>
+        </header>
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+          <div class="mypage_wrap">
+            <div class="myID_area">
+              <div class="myID">
+                <i class="fa-solid fa-user usern"></i>
+                <div class="idinfo-bx">
+                  <p class="id"><span><strong>ID</strong> 님</span></p>
+                  <p><span>N</span> / <span>Basic</span></p>
+                </div>
+              </div>
+
+              <div class="now_state-bx money">
+                <div class="nowstate">
+                  <span>잔액</span>
+                  <strong>50,000P</strong>
+                </div>
+                <div class="btn-bx">
+                  <a href="">충전</a>
+                  <a href="">내역</a>
+                </div>
+              </div>
+              <div class="now_state-bx period">
+                <div class="nowstate">
+                  <span>정기</span>
+                  <strong>~24/09/30</strong>
+                </div>
+                <div class="btn-bx">
+                  <a href="">기간연장</a>
+                  <a href="">내역</a>
+                </div>
+              </div>
+            </div>
+
+            <!----관리 영역----->
+            <div class="myManage_area">
+              <div class="mymanage-bx">
+                <strong>박스관리</strong>
+                <a class="editBtn" href="">수정하기 <i class="fa-solid fa-angle-right"></i></a>
+                <div class="manage-list">
+                  <ul>
+                    <li>
+                      <input type="radio" id="group01" name="group" checked="">
+                      <label for="group01">그룹명1</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="group02" name="group">
+                      <label for="group02">그룹명2</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="group03" name="group">
+                      <label for="group03">그룹명3</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mymanage-bx">
+                <strong>필터관리</strong>
+                <a class="editBtn" href="">수정하기 <i class="fa-solid fa-angle-right"></i></a>
+                <div class="manage-list">
+                  <ul>
+                    <li>
+                      <input type="radio" id="filter01" name="filter" checked="">
+                      <label for="filter01">필터1</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="filter02" name="filter">
+                      <label for="filter02">필터2</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="filter03" name="filter">
+                      <label for="filter03">필터3</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!----241018 input, radio 추가 st----->
+              <div class="myinfo">
+                <strong>내 정보</strong>
+                <a class="editBtn" href="">수정하기 <i class="fa-solid fa-angle-right"></i></a>
+                <div class="myinfo-list">
+                  <dl>
+                    <dt>이름</dt>
+                    <dd>홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>이름</dt>
+                    <dd><input type="text" value="홍길동" class="block"></dd>
+                  </dl>
+                  <dl>
+                    <dt>연락처</dt>
+                    <dd>010-1234-5678</dd>
+                  </dl>
+                  <dl>
+                    <dt>연락처</dt>
+                    <dd><input type="text" value="010-1234-5678" class="block"></dd>
+                  </dl>
+                  <dl>
+                    <dt>사용여부</dt>
+                    <dd>
+                      <input type="radio" id="use" name="usesel"><label for="use">사용함</label>
+                      <input type="radio" id="usen" name="usesel"><label for="usen">사용안함</label>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!----// 241018 input, radio 추가 ed---->
+
+              <div class="myfooter">
+                <a href="">비밀번호변경</a>
+                <a href="">로그아웃</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      $(function() {
+          //기간연장 탭
+          $('ul.tab_list li').click(function() {
+              var activeTab = $(this).attr('data-tab');
+              $('ul.tab_list li').removeClass('current');
+              $('.appList_tabcont').removeClass('current');
+              $(this).addClass('current');
+              $('#' + activeTab).addClass('current');
+          });
+      });
+  </script>
+</body>
+</html>

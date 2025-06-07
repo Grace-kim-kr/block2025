@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
+
+    <!---popup st---->
+    <div class="popup fullPop" id="access">
+      <div class="access-tit">
+        <strong>앱 사용을 위해<br/>접근 권한을 허용해주세요</strong>
+      </div>
+
+      <div class="access-infoBx">
+        <strong class="tit">선택적 접근 권한</strong>
+        <ul class="list">
+          <li>
+            <strong>알림</strong>
+            <span>알림 메시지 발송</span>
+          </li>
+          <li>
+            <strong>카메라</strong>
+            <span>신분증, 영수증 촬영</span>
+          </li>
+          <li>
+            <strong>사진</strong>
+            <span>사업자등록증 이미지 첨부</span>
+          </li>
+          <li>
+            <strong>위치</strong>
+            <span>위치</span>
+          </li>
+          <li>
+            <strong>face ID</strong>
+            <span>로그인 및 인증서비스 제공</span>
+          </li>
+        </ul>
+      </div>
+      
+      <p class="c">선택 항목을 허용하지 않으실 경우,<br/>일부 서비스의 이용이 제한 될 수 있습니다.</p>
+      <!----241019 버튼 input태그로 변경. class에 unact 추가하면 비활성화 st ------>
+      <input type="text" class="regBtn" value="동의하고 시작하기">
+      <!----//241019 버튼 input태그로 변경. class에 unact 추가하면 비활성화 ed ------>
+      <a href="#none" class="close b-close"><span>닫기</span></a>
+    </div>
+    <!---//popup ed---->
+
+    <script>
+        $("#access").bPopup();
+    </script>
+</body>
+</html>

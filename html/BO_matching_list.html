@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="before_btn" aria-label="이전으로"><i class="fas fa-chevron-left"></i></button>
+            <h1 class="title">매칭현황</h1>
+        </header>
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap">
+          <div class="todayBnner-bx">
+            <div class="todayBnner">
+              <i class="fa-regular fa-bell"></i>
+              <span> 금일전국매칭</span>
+              <p>
+                <strong>[N] 149</strong>, <strong>[B] 90</strong>
+              </p>
+            </div>
+          </div>
+          <!---- 매칭현황 st ---->
+          <div class="matchingWrap">
+            <!---날짜 선택 영역 st--->
+            <div class="dateSelect-bx">
+              <strong class="pr10">날짜 선택</strong>
+              <input type="date" id="datepicker" class="datepicker"><label></label>
+              <!-- <button class="selBtn"><i class="fa-solid fa-caret-left"></i></button>
+              <p class="date">2024.11.20.<br/><span class="today">오늘</span></p>
+              <button class="selBtn"><i class="fa-solid fa-caret-right"></i></button> -->
+            </div>
+            <!---//날짜 선택 영역 ed--->
+            <!--- 목록 영역 style01 st--->
+            <div class="filterBtn-bx">
+              <button class="all select">전체보기</button>
+              <button class="ing">진행중</button>
+              <button class="done">완료</button>
+              <button class="stby">대기중</button>
+            </div>
+
+            <div class="manageList-bx w100">
+              <table class="manageList_table">
+                <colgroup>
+                  <col width="80"><col><col><col><col width="72">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>상태</th>
+                    <th>번호</th>
+                    <th>인원</th>
+                    <th>입찰시간</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="c"><span class="stBadge ing">진행중</span></td>
+                    <td class="c">1</td>
+                    <td class="c">1/3</td>
+                    <td class="c">20:38</td>
+                    <td class="c"><a href="" class="btn">확인</a></td>
+                  </tr>
+                  <tr>
+                    <td class="c"><span class="stBadge stby">대기중</span></td>
+                    <td class="c">1</td>
+                    <td class="c">1/3</td>
+                    <td class="c">20:38</td>
+                    <td class="c"><a href="" class="btn">확인</a></td>
+                  </tr>
+                  <tr>
+                    <td class="c"><span class="stBadge done">완료</span></td>
+                    <td class="c">1</td>
+                    <td class="c">1/3</td>
+                    <td class="c">20:38</td>
+                    <td class="c"><a href="" class="btn">확인</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!---//목록 영역 style01 ed--->
+            <!--- 목록 영역 style02 st--->
+            <div class="matchingList-bx">
+              <ul>
+                <li>
+                  <div class="state">
+                    <span class="stBadge ing">진행중</span>
+                  </div>
+                  <div class="info">
+                    <strong class="tit">한화증권 1</strong>
+                    <p>
+                      <span class="dt">인원</span>
+                      <span class="dd">1/3</span>
+                    </p>
+                    <p>
+                      <span class="dt">입찰시간</span>
+                      <span class="dd">20:38</span>
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="" class="btn">상세 <i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="state">
+                    <span class="stBadge stby">대기중</span>
+                  </div>
+                  <div class="info">
+                    <strong class="tit">신한은행 1</strong>
+                    <p>
+                      <span class="dt">인원</span>
+                      <span class="dd">1/3</span>
+                    </p>
+                    <p>
+                      <span class="dt">입찰시간</span>
+                      <span class="dd">20:38</span>
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="" class="btn">상세 <i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="state">
+                    <span class="stBadge done">완료</span>
+                  </div>
+                  <div class="info">
+                    <strong class="tit">스타벅스 1</strong>
+                    <p>
+                      <span class="dt">인원</span>
+                      <span class="dd">1/4</span>
+                    </p>
+                    <p>
+                      <span class="dt">입찰시간</span>
+                      <span class="dd">20:38</span>
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="" class="btn">상세 <i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!---//목록 영역 style02 ed--->
+          </div>
+          <!---- //매칭현황 ed ---->          
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <script>
+      //datepicker 오늘날짜 표시
+      document.getElementById('datepicker').value = new Date().toISOString().substring(0, 10);
+    </script>
+</body>
+</html>

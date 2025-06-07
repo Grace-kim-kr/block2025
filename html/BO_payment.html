@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>BLOCK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="../resources/m/css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="../resources/m/js/jquery.min.js"></script>
+    <script src="../resources/m/js/common.js"></script>
+    <script src="../resources/m/js/custom.js"></script>
+    <!-- datepicker-->
+    <script src="../resources/m/js/picker.js"></script>
+    <script src="../resources/m/js/picker-date.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button type="button" class="before_btn" aria-label="이전으로"><i class="fas fa-chevron-left"></i></button>
+            <h1 class="title">충전하기</h1>
+        </header>
+        <!-----------콘텐츠 영역 st-------------->
+        <div class="cont_wrap fixed">
+          <!-----충전하기 st------>
+          <div class="Charge-bx">
+            <p>충전하실 금액을 선택하세요</p>
+            <div class="point-list">
+              <ul>
+                <li>
+                  <input type="radio" id="point01" name="point" checked>
+                  <label for="point01" class="pointLb">
+                    <p><span>10,000P</span></p>
+                    <strong>10,000원</strong>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="point02" name="point">
+                  <label for="point02" class="pointLb">
+                    <p><span>20,000P</span><span class="plus">+ 1,000P</span></p>
+                    <strong>20,000원</strong>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-----//충전하기 ed------>
+          <!-----기간연장하기 st------>
+          <div class="Charge-bx">
+            <p>연장하실 기간을 선택하세요</p>
+            <div class="appList_tab">
+              <ul class="tab_list">
+                  <li data-tab="tab_basic" class="current">Basic</li>
+                  <li data-tab="tab_Premium" class="">Premium</li>
+              </ul>
+
+              <div id="tab_basic" class="appList_tabcont current">
+                <div class="point-list">
+                  <ul>
+                    <li>
+                      <input type="radio" id="basic01" name="basic">
+                      <label for="basic01" class="pointLb">
+                        <p><span>1개월</span></p>
+                        <strong>20,000원</strong>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="basic02" name="basic">
+                      <label for="basic02" class="pointLb">
+                        <p><span>3개월</span><span class="sale">(-5%)</span></p>
+                        <strong>57,000원</strong>
+                      </label>
+                    </li>
+    
+                  </ul>
+                </div>
+              </div>
+
+              <div id="tab_Premium" class="appList_tabcont">
+                <div class="point-list">
+                  <ul>
+                    <li>
+                      <input type="radio" id="premium01" name="premium">
+                      <label for="premium01" class="pointLb">
+                        <p><span>6개월</span><span class="sale">(-10%)</span></p>
+                        <strong>108,000원</strong>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="premium02" name="premium">
+                      <label for="premium02" class="pointLb">
+                        <p><span>12개월</span><span class="sale">(-15%)</span></p>
+                        <strong>204,000원</strong>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-----//기간연장하기 ed------>
+          <!-----출금하기 st------>
+          <div class="Charge-bx">
+            <p>출금하실 금액을 선택하세요</p>
+            <div class="wdraw-bx">
+              <table class="info_list">
+                  <colgroup>
+                    <col><col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                        <td>전체포인트</td>
+                        <td class="r"><b>51,600P</b></td>
+                    </tr>
+                    <tr class="borderB input">
+                        <td>출금가능금액</td>
+                        <td class="r"><input type="text" class="input block wdraw" value="50,000"></td>
+                    </tr>
+                    <tr>
+                        <td>출금 후 잔액</td>
+                        <td class="r"><b>1,600P</b></td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+          </div>
+          <!-----//출금하기 ed------>
+          <div class="total">
+            <div>
+              <span>결제금액</span>
+              <strong>50,000원</strong>
+            </div>
+            <a class="payBtn" href="">결제하기</a>
+          </div>
+        </div>
+        <!-----------콘텐츠 영역 ed-------------->
+        <div class="footer-direct">
+          <ul>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+            <li class="setting"><a href=""><i class="fa-solid fa-gear"></i><span>설정</span></a></li>
+            <li class="bid"><a href=""><i class="fa-solid fa-rectangle-list"></i><span>입찰목록</span></a></li>
+            <li class="notice"><a href=""><i class="fa-solid fa-bell"></i><span>알림</span></a></li>
+            <li class="mypage"><a href=""><i class="fa-solid fa-user"></i><span>마이페이지</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      $(function() {
+          //기간연장 탭
+          $('ul.tab_list li').click(function() {
+              var activeTab = $(this).attr('data-tab');
+              $('ul.tab_list li').removeClass('current');
+              $('.appList_tabcont').removeClass('current');
+              $(this).addClass('current');
+              $('#' + activeTab).addClass('current');
+          });
+      });
+  </script>
+</body>
+</html>
