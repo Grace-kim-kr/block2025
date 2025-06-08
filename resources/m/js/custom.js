@@ -53,7 +53,7 @@ $(document).ready(function(){
         });
 
         // 높이 체크
-        $('body').height($(window).height());
+        //$('body').height($(window).height());
 
 });
 
