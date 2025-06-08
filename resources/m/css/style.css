@@ -118,7 +118,7 @@ a#topBtn:hover{background-color:#2b2b2b;}
 
 /************ register 회원가입 ************/
 /* 약관동의 */
-.cusReg_agree_wrap{display:flex; flex-direction: column; justify-content: flex-end; height:100vh; padding:6rem 2.5rem 5rem;}
+.cusReg_agree_wrap{display:flex; flex-direction: column; justify-content: flex-end; height:100dvh; padding:6rem 2.5rem 5rem;}
 .logo-area{flex:1; text-align:center;}
 .agree-area{flex:1;}
 .agree-check-bx{margin-top:3rem;}
@@ -160,7 +160,7 @@ input[type=text].regBtn{display:block; width:100%; height:54px; margin-top:2.0re
 .regBtn.unact{opacity:0.3; pointer-events: none;}
 
 /*************** main 메인 ***************/
-.main_wrap{height:100vh; padding-top:5.0rem; padding-bottom:6.5rem;}
+.main_wrap{height:100dvh; padding-top:5.0rem; padding-bottom:6.5rem;}
 .todayBnner{position:relative; display:flex; margin-bottom:0.5rem; padding:1.5rem 2.5rem 1.5rem 3rem; background-color:#0068fe; border-radius:4px; text-align:center; line-height:1.2; color:#fff;}
 .todayBnner i{position:absolute; top:1.6rem; left:1rem;}
 .todayBnner span{font-size:1.5rem;}
